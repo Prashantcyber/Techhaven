@@ -1,0 +1,80 @@
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased gap for better spacing */
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #3862254f; /* Light background for better visibility */
+  border-radius: 10px; /* Added border radius for rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.checkout-form h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkout-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px; /* Spacing between label and input */
+}
+
+.checkout-form input,
+.checkout-form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px; /* Spacing between input and label */
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-left: 10px;
+  background-color: #b7e1b7;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+  border-color: #407fc7;
+}
+
+.checkout-form button {
+  margin-top: 20px;
+  background-color: #92c740;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none; /* Removed border for a cleaner look */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-form button:hover {
+  background-color: #3269a1;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px; /* Added spacing above error message */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout-form {
+    max-width: 90%;
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .checkout-form h1 {
+    font-size: 20px; /* Adjusted heading size for smaller screens */
+  }
+
+  .checkout-form button {
+    font-size: 16px; /* Adjusted button size for smaller screens */
+  }
+}
