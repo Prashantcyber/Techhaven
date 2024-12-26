@@ -46,8 +46,9 @@
   /* Responsive Product Detail */
   @media (max-width: 768px) {
     .product-detail {
+      display: flex;
       flex-direction: column;
-      text-align: center;
+      align-items: center;
     }
   
     .product-detail img {
