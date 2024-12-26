@@ -16,7 +16,7 @@ const ProductDetailsPage = () => {
 
   useEffect(() => {
     // Correct API endpoint to fetch product details
-    axios.get(`https://66d19f5362816af9a4f44d1d.mockapi.io/proucts/${id}`)
+    axios.get(`https://676d27480e299dd2ddfe9aa1.mockapi.io/data/${id}`)
       .then(response => setProduct(response.data))
       .catch(error => console.error('Error fetching product details:', error));
   }, [id]);
